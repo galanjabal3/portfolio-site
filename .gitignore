@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+
+# Browser
+.chrome-temp/
+
+# Editor
+.vscode/
+.idea/
+
+# Test
+test-portfolio.py

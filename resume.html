@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galan Jabal — Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      /* ── Print setup ── */
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        .no-print { display: none !important; }
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --ink:    #0f172a;
+        --muted:  #475569;
+        --subtle: #94a3b8;
+        --line:   #e2e8f0;
+        --accent: #0e7490;
+        --accent-light: #ecfeff;
+        --paper:  #ffffff;
+      }
+
+      body {
+        font-family: Inter, ui-sans-serif, sans-serif;
+        font-size: 10.5pt;
+        color: var(--ink);
+        background: #f1f5f9;
+        line-height: 1.55;
+      }
+
+      /* ── Print/preview wrapper ── */
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        background: var(--paper);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+
+      /* ── Sidebar ── */
+      .sidebar {
+        background: var(--ink);
+        color: #e2e8f0;
+        padding: 36px 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      .avatar-block {
+        text-align: center;
+      }
+
+      .avatar {
+        width: 72px;
+        height: 72px;
+        background: var(--accent);
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #fff;
+        margin: 0 auto 12px;
+      }
+
+      .sidebar-name {
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: #fff;
+        line-height: 1.2;
+      }
+
+      .sidebar-role {
+        font-size: 0.78rem;
+        color: var(--accent);
+        font-weight: 600;
+        margin-top: 3px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .sidebar-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .sidebar-label {
+        font-size: 0.65rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--subtle);
+        margin-bottom: 4px;
+      }
+
+      .contact-item {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        font-size: 0.8rem;
+        color: #cbd5e1;
+        word-break: break-all;
+      }
+
+      .contact-item span:first-child {
+        font-size: 0.68rem;
+        color: var(--subtle);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .skill-group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .skill-category {
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-top: 4px;
+      }
+
+      .skill-list {
+        font-size: 0.8rem;
+        color: #cbd5e1;
+        line-height: 1.6;
+      }
+
+      /* ── Main content ── */
+      .main {
+        padding: 36px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+      }
+
+      .main-header {
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 12px;
+      }
+
+      .main-name {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--ink);
+        line-height: 1;
+      }
+
+      .main-role {
+        font-size: 0.95rem;
+        color: var(--accent);
+        font-weight: 600;
+        margin-top: 4px;
+      }
+
+      .main-summary {
+        margin-top: 8px;
+        font-size: 0.88rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      /* ── Sections ── */
+      .cv-section {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .cv-section-title {
+        font-size: 0.7rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--accent);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 5px;
+      }
+
+      /* ── Experience item ── */
+      .exp-item {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      .exp-topline {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+      }
+
+      .exp-title {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--ink);
+      }
+
+      .exp-date {
+        font-size: 0.75rem;
+        color: var(--subtle);
+        white-space: nowrap;
+        font-weight: 500;
+      }
+
+      .exp-company {
+        font-size: 0.8rem;
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      .exp-bullets {
+        margin-top: 4px;
+        padding-left: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .exp-bullets li {
+        font-size: 0.82rem;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      /* ── Project item ── */
+      .project-item {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .project-topline {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+      }
+
+      .project-name {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--ink);
+      }
+
+      .project-stack {
+        font-size: 0.72rem;
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      .project-desc {
+        font-size: 0.8rem;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      /* ── Education ── */
+      .edu-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+      }
+
+      .edu-school {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--ink);
+      }
+
+      .edu-detail {
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      /* ── No-print banner ── */
+      .no-print {
+        background: var(--accent);
+        color: #fff;
+        text-align: center;
+        padding: 12px 20px;
+        font-family: Inter, sans-serif;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .no-print kbd {
+        background: rgba(255,255,255,0.2);
+        border: 1px solid rgba(255,255,255,0.4);
+        border-radius: 5px;
+        padding: 2px 8px;
+        font-size: 0.85rem;
+        font-family: inherit;
+      }
+
+      .no-print a {
+        color: #fff;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Banner: only shown on screen, hidden on print -->
+    <div class="no-print">
+      💡 Untuk simpan sebagai PDF: tekan <kbd>Ctrl+P</kbd> (Windows) atau <kbd>⌘+P</kbd> (Mac) → pilih <strong>Save as PDF</strong> → klik Save.
+    </div>
+
+    <div class="page">
+
+      <!-- ══════════ SIDEBAR ══════════ -->
+      <aside class="sidebar">
+
+        <div class="avatar-block">
+          <div class="avatar">GJ</div>
+          <div class="sidebar-name">Galan Jabal Nur</div>
+          <div class="sidebar-role">Backend Developer</div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-label">Contact</div>
+          <div class="contact-item">
+            <span>Email</span>
+            galanjabal3@gmail.com
+          </div>
+          <div class="contact-item">
+            <span>GitHub</span>
+            github.com/galanjabal3
+          </div>
+          <div class="contact-item">
+            <span>LinkedIn</span>
+            linkedin.com/in/galan-jabal-nur-8a1ba5234
+          </div>
+          <div class="contact-item">
+            <span>Location</span>
+            Demak, Central Java, Indonesia
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-label">Skills</div>
+          <div class="skill-group">
+            <div class="skill-category">Backend</div>
+            <div class="skill-list">Python · FastAPI · Falcon<br>Go · Gin · Node.js<br>REST API · JWT Auth</div>
+
+            <div class="skill-category">Database</div>
+            <div class="skill-list">PostgreSQL · Supabase<br>SQLAlchemy · Pony ORM<br>Drizzle ORM</div>
+
+            <div class="skill-category">Frontend</div>
+            <div class="skill-list">React · Next.js 15<br>Vite · TailwindCSS</div>
+
+            <div class="skill-category">DevOps & Tools</div>
+            <div class="skill-list">Docker · Cloudinary<br>Git · GitHub</div>
+
+            <div class="skill-category">AI & Automation</div>
+            <div class="skill-list">Google Gemini API<br>Playwright · Typer · Jinja2</div>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- ══════════ MAIN ══════════ -->
+      <main class="main">
+
+        <div class="main-header">
+          <div class="main-name">Galan Jabal Nur</div>
+          <div class="main-role">Junior Backend Developer</div>
+          <p class="main-summary">
+            Backend developer with 4+ years of experience building REST APIs,
+            database systems, and full-stack products. Focused on clean, maintainable
+            code and product-driven development using Python and Go. Experienced in
+            integrating AI features, automating workflows, and shipping multi-role
+            web applications from scratch.
+          </p>
+        </div>
+
+        <!-- Experience -->
+        <div class="cv-section">
+          <div class="cv-section-title">Work Experience</div>
+
+          <div class="exp-item">
+            <div class="exp-topline">
+              <span class="exp-title">Backend Developer</span>
+              <span class="exp-date">Nov 2021 – Present</span>
+            </div>
+            <div class="exp-company">Paideia Educational Solutions &middot; Full-time</div>
+            <ul class="exp-bullets">
+              <li>Developed and maintained backend APIs and services supporting educational platform features.</li>
+              <li>Collaborated with product and frontend teams to design system architecture and data models.</li>
+              <li>Implemented authentication, user management, and database query optimization using Python and PostgreSQL.</li>
+              <li>Applied clean code principles and contributed to automated testing practices within the team.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="cv-section">
+          <div class="cv-section-title">Selected Projects</div>
+
+          <div class="project-item">
+            <div class="project-topline">
+              <span class="project-name">Sobat Pintar</span>
+              <span class="project-stack">Next.js · Go Gin · Supabase · Google Gemini</span>
+            </div>
+            <div class="project-desc">
+              AI-powered learning platform for Indonesian students (K–12). Built the Go Gin
+              backend covering authentication, AI quota management, study scheduling, and
+              gamification. Integrated Google Gemini API for tutor chat and practice questions.
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-topline">
+              <span class="project-name">Kantin</span>
+              <span class="project-stack">React · Vite · FastAPI · PostgreSQL</span>
+            </div>
+            <div class="project-desc">
+              Multi-tenant food ordering platform with QR code table ordering, seller dashboard,
+              receipt printing, and admin panel for restaurant registration. Live demo deployed
+              on Vercel.
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-topline">
+              <span class="project-name">Toki Chat Bot</span>
+              <span class="project-stack">TypeScript · Node.js · PostgreSQL · Drizzle</span>
+            </div>
+            <div class="project-desc">
+              Telegram bot for anonymous topic-based chat with user matching, admin ban/broadcast
+              commands, and PostgreSQL runtime with in-memory fallback for local development.
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-topline">
+              <span class="project-name">Auto Tester</span>
+              <span class="project-stack">Playwright · TypeScript · CLI · YAML</span>
+            </div>
+            <div class="project-desc">
+              CLI-based QA automation tool using YAML config for multi-site test definitions.
+              Detects slow APIs and broken flows, generates HTML/JSON reports, and sends
+              Telegram notifications.
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-topline">
+              <span class="project-name">Todo App</span>
+              <span class="project-stack">React · Vite · Python Falcon · Pony ORM</span>
+            </div>
+            <div class="project-desc">
+              Full-stack task manager with JWT auth, task CRUD, due dates, status workflow,
+              and group collaboration via invite. Implemented service layer for users, groups,
+              members, and tasks across frontend and backend.
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-topline">
+              <span class="project-name">BootPy</span>
+              <span class="project-stack">Python · Typer · Jinja2 · Rich</span>
+            </div>
+            <div class="project-desc">
+              Interactive CLI scaffolding tool for generating production-ready FastAPI and Django
+              projects. Published on PyPI as bootpy-cli. Manifest-driven template engine with
+              atomic generation and conditional file output.
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="cv-section">
+          <div class="cv-section-title">Education</div>
+          <div class="exp-item">
+            <div class="exp-topline">
+              <span class="exp-title">SMK Bina Nusantara Demak</span>
+              <span class="exp-date">Jun 2020 – May 2023</span>
+            </div>
+            <div class="exp-company">Computer and Network Engineering (TKJ)</div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+
+  </body>
+</html>
