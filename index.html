@@ -6,12 +6,23 @@
     <title>Galan Jabal — Junior Backend Developer Portfolio</title>
     <meta
       name="description"
-      content="Galan Jabal's portfolio — Junior Backend Developer specializing in Python, Go, REST APIs, and full-stack web projects."
+      content="Galan Jabal's portfolio — Junior Backend Developer specializing in Python, Go, REST APIs, and full-stack web projects. All projects built with AI-assisted development."
     />
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://galanjabal.dev/" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Galan Jabal — Junior Backend Developer" />
-    <meta property="og:description" content="Portfolio featuring AI education platform, food ordering system, Telegram bot, QA automation tool, task manager, and Python CLI scaffolding tool." />
+    <meta property="og:description" content="Portfolio featuring AI education platform, food ordering system, Telegram bot, QA automation tool, task manager, and Python CLI scaffolding tool. Built with AI-assisted development using Codex, Gemini, Claude, and Opencode." />
+    <meta property="og:url" content="https://galanjabal.dev/" />
+    <meta property="og:site_name" content="Galan Jabal Portfolio" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Galan Jabal — Junior Backend Developer" />
+    <meta name="twitter:description" content="Portfolio featuring AI education platform, food ordering system, Telegram bot, QA automation tool, task manager, and Python CLI scaffolding tool. Built with AI-assisted development." />
+    <meta name="twitter:creator" content="@galanjabal3" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +30,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
     <header class="site-header" id="top">
       <nav class="nav" aria-label="Main navigation">
         <a class="brand" href="#top" aria-label="Back to top">
@@ -80,6 +94,7 @@
             <span style="--fill: 88%">REST API</span>
             <span style="--fill: 82%">SQL database</span>
             <span style="--fill: 76%">Full-stack projects</span>
+            <span style="--fill: 95%">AI-assisted coding</span>
           </div>
           <div class="metric-row">
             <div>
@@ -123,6 +138,9 @@
           </p>
           <p>
             With solid hands-on experience in <strong>Python</strong> (FastAPI, Falcon) and <strong>Go</strong> (Gin), coupled with <strong>PostgreSQL</strong> database management, I thrive in environments that prioritize clean code, automated testing, and product-driven development.
+          </p>
+          <p>
+            All projects in this portfolio are built with <strong>AI-assisted development</strong> (vibe coding) using tools like <strong>AI Codex</strong>, <strong>Gemini</strong>, <strong>Claude</strong>, and <strong>Opencode</strong> — accelerating development while maintaining code quality.
           </p>
         </div>
       </section>
@@ -174,11 +192,12 @@
         <div class="project-grid" id="project-grid">
           <article class="project-card" data-category="ai" data-name="sobat pintar">
             <div class="project-media soft-blue">
-              <img src="https://res.cloudinary.com/dzzflhq79/image/upload/v1778876222/sobi_robot_qusvll.png" alt="Sobat Pintar mascot" />
+              <img src="https://res.cloudinary.com/dzzflhq79/image/upload/v1778876222/sobi_robot_qusvll.png" alt="Sobat Pintar mascot" loading="lazy" />
             </div>
             <div class="project-content">
               <div class="project-topline">
                 <span class="badge">AI Education</span>
+                <span class="badge ai-badge">AI-assisted</span>
                 <span class="status">Done</span>
               </div>
               <h3>Sobat Pintar</h3>
@@ -195,11 +214,12 @@
 
           <article class="project-card" data-category="fullstack" data-name="kantin">
             <div class="project-media soft-green">
-              <img src="assets/kantin_logo.svg" alt="Kantin logo" />
+              <img src="assets/kantin_logo.svg" alt="Kantin logo" loading="lazy" />
             </div>
             <div class="project-content">
               <div class="project-topline">
                 <span class="badge">Food Ordering</span>
+                <span class="badge ai-badge">AI-assisted</span>
                 <span class="status">Live demo</span>
               </div>
               <h3>Kantin</h3>
@@ -217,11 +237,12 @@
 
           <article class="project-card" data-category="bot" data-name="toki chat bot">
             <div class="project-media soft-orange">
-              <img src="assets/toki-avatar.png" alt="Toki Chat avatar" />
+              <img src="assets/toki-avatar.png" alt="Toki Chat avatar" loading="lazy" />
             </div>
             <div class="project-content">
               <div class="project-topline">
                 <span class="badge">Telegram Bot</span>
+                <span class="badge ai-badge">AI-assisted</span>
                 <span class="status">MVP</span>
               </div>
               <h3>Toki Chat Bot</h3>
@@ -243,12 +264,13 @@
             <div class="project-content">
               <div class="project-topline">
                 <span class="badge">QA Automation</span>
+                <span class="badge ai-badge">AI-assisted</span>
                 <span class="status">Tooling</span>
               </div>
               <h3>Auto Tester</h3>
-              <p>YAML-driven QA runner that detects broken features and slow APIs with HTML/JSON reports.</p>
+              <p>Full-stack QA automation platform with live dashboard, slow API detection, video recording, and real-time SSE streaming.</p>
               <div class="tags">
-                <span>Playwright</span><span>TypeScript</span><span>CLI</span><span>YAML</span>
+                <span>Playwright</span><span>TypeScript</span><span>React</span><span>Express</span><span>PostgreSQL</span><span>SSE</span>
               </div>
               <div class="project-links">
                 <a href="https://github.com/galanjabal3/auto-tester" target="_blank" rel="noopener noreferrer">README</a>
@@ -259,11 +281,12 @@
 
           <article class="project-card" data-category="fullstack" data-name="todo app">
             <div class="project-media soft-red">
-              <img src="assets/todo_logo.png" alt="Todo App logo" />
+              <img src="assets/todo_logo.png" alt="Todo App logo" loading="lazy" />
             </div>
             <div class="project-content">
               <div class="project-topline">
                 <span class="badge">Task Manager</span>
+                <span class="badge ai-badge">AI-assisted</span>
                 <span class="status">Full-stack</span>
               </div>
               <h3>Todo App</h3>
@@ -286,6 +309,7 @@
             <div class="project-content">
               <div class="project-topline">
                 <span class="badge">CLI Tool</span>
+                <span class="badge ai-badge">AI-assisted</span>
                 <span class="status">Published</span>
               </div>
               <h3>BootPy</h3>
@@ -324,7 +348,7 @@
           </div>
           <div>
             <h3>AI & automation</h3>
-            <p>Gemini integration, Playwright, API monitoring, reporting, CLI tooling (Typer, Jinja2).</p>
+            <p>Gemini integration, Playwright, API monitoring, SSE streaming, reporting, CLI tooling (Typer, Jinja2).</p>
           </div>
         </div>
       </section>
@@ -362,9 +386,13 @@
       <div class="footer-links">
         <a href="https://github.com/galanjabal3" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/galan-jabal-nur-8a1ba5234/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="#top">Back to top</a>
       </div>
     </footer>
+
+    <!-- Back to top floating button -->
+    <a href="#top" class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </a>
 
     <!-- Modal: Sobat Pintar -->
     <div id="sobi-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="sobi-modal-title" aria-hidden="true">
@@ -441,20 +469,21 @@
         <button class="modal-close" onclick="closeModal('auto-modal')" aria-label="Close">&times;</button>
         <p class="modal-eyebrow">Case Study</p>
         <h3 id="auto-modal-title">Auto Tester</h3>
-        <p class="modal-meta">QA Automation &middot; TypeScript + Playwright + YAML &middot; 2026</p>
+        <p class="modal-meta">QA Automation &middot; TypeScript + React + Express + PostgreSQL &middot; 2026</p>
         <h4>Background</h4>
-        <p>Automated web testing platform that detects broken features and slow APIs. Define sites via YAML config, run tests, get reports.</p>
+        <p>Full-stack automated web testing platform with a self-hosted dashboard for managing sites, viewing results, and streaming test runs live. Built in two phases: CLI engine for running Playwright tests, and a React dashboard for monitoring and management.</p>
         <h4>My Contribution</h4>
         <ul>
-          <li>Designed a YAML-driven multi-site configuration system with validation.</li>
-          <li>Built an API monitor that intercepts XHR/fetch responses and flags slow endpoints.</li>
-          <li>Implemented session persistence with cookie/localStorage save and restore.</li>
-          <li>Created HTML, JSON, and Telegram reporters for different notification channels.</li>
+          <li>Designed a YAML-driven multi-site configuration system with Playwright Codegen integration for visual test recording.</li>
+          <li>Built a React dashboard with real-time SSE streaming, video playback, and code viewer for test results.</li>
+          <li>Implemented an API monitor that intercepts XHR/fetch responses and flags slow endpoints with configurable thresholds.</li>
+          <li>Created Express.js API with PostgreSQL for run history, site management, and schedule CRUD.</li>
+          <li>Added session persistence, Telegram alerts, HTML/JSON report generation, and cron-based scheduling.</li>
         </ul>
         <h4>Tech Stack</h4>
-        <p class="modal-stack">TypeScript &middot; Playwright &middot; Commander &middot; YAML &middot; Axios</p>
+        <p class="modal-stack">TypeScript &middot; Playwright &middot; React 19 &middot; Vite &middot; TailwindCSS &middot; Express.js &middot; PostgreSQL &middot; SSE &middot; Commander.js</p>
         <h4>Outcome</h4>
-        <p>CLI tool that runs automated tests against configured sites, detects performance issues, and sends alerts via Telegram.</p>
+        <p>Full-stack QA platform with live dashboard, slow API detection, video recording, Playwright Codegen, and real-time test streaming via SSE.</p>
       </div>
     </div>
 

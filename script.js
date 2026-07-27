@@ -130,4 +130,29 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     revealElements.forEach((el) => el.classList.add("is-visible"));
   }
+
+  /* ─── Back to Top Button ─── */
+  const backToTop = document.getElementById("back-to-top");
+
+  if (backToTop) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        backToTop.classList.add("is-visible");
+      } else {
+        backToTop.classList.remove("is-visible");
+      }
+    }, { passive: true });
+  }
+
+  /* ─── Scroll Progress Indicator ─── */
+  const scrollProgress = document.getElementById("scroll-progress");
+
+  if (scrollProgress) {
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      scrollProgress.style.width = scrollPercent + "%";
+    }, { passive: true });
+  }
 });

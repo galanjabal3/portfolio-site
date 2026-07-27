@@ -1,0 +1,5 @@
+# robots.txt - Galan Jabal Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://galanjabal.dev/sitemap.xml
