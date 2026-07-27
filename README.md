@@ -9,16 +9,23 @@ technical skills, and selected work to recruiters or hiring teams.
 - `styles.css` - Responsive styling with CSS variables, grid layouts, and animations.
 - `script.js` - Project search, category filtering, modal, hamburger menu, scroll reveal.
 - `resume.html` - Standalone print-optimized A4 resume (Ctrl+P to save as PDF).
-- `assets/` - Images and logos for project cards.
+- `assets/` - Images, logos, and favicon for project cards.
+- `robots.txt` - Search engine crawler instructions.
+- `sitemap.xml` - Sitemap for search engine indexing.
 
 ## Features
 
 - **6 project cards** — Sobat Pintar, Kantin, Toki Chat Bot, Auto Tester, Todo App, BootPy
+- **AI-assisted badges** — all projects marked as AI-assisted development (Codex, Gemini, Claude, Opencode)
 - **Search & filter** — real-time search by name/description + category filter (AI, Full-Stack, Bot, Tooling)
-- **Case study modal** — Sobat Pintar detailed contribution breakdown
+- **Case study modal** — detailed contribution breakdown for each project
 - **Resume page** — print-optimized A4 layout with sidebar
 - **Mobile responsive** — hamburger menu, single-column layout on small screens
 - **Scroll animations** — subtle fade-in on sections via Intersection Observer
+- **Scroll progress indicator** — gradient bar at top showing scroll position
+- **Floating back-to-top** — circular button appears after scrolling down
+- **SEO optimized** — favicon, Twitter cards, Open Graph, canonical URL, robots.txt, sitemap.xml
+- **Lazy loading** — images load on demand for better performance
 - **Accessible** — ARIA attributes, focus management, keyboard navigation
 
 ## How to Open
@@ -41,6 +48,7 @@ open portfolio-site/index.html
 - Visual assets are in the `assets/` folder.
 - LinkedIn is linked externally at:
   `https://www.linkedin.com/in/galan-jabal-nur-8a1ba5234/`
+- Domain used in meta tags: `https://galanjabal.dev/` (update if different)
 
 ## Deployment
 
