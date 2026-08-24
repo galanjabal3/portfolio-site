@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   /* ─── Modal ─── */
+  const FOCUSABLE = 'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
+  let lastFocused = null;
+
   function openModal(id) {
     const modal = document.getElementById(id);
     if (!modal) return;
+    lastFocused = document.activeElement;
     modal.classList.add("is-open");
     modal.setAttribute("aria-hidden", "false");
     document.body.classList.add("no-scroll");
@@ -16,15 +20,40 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.remove("is-open");
     modal.setAttribute("aria-hidden", "true");
     document.body.classList.remove("no-scroll");
-    const trigger = document.querySelector(`[data-modal-trigger="${id}"]`);
-    if (trigger) trigger.focus();
+    if (lastFocused) lastFocused.focus();
   }
 
-  window.openModal = openModal;
-  window.closeModal = closeModal;
+  function trapFocus(modal, e) {
+    const content = modal.querySelector(".modal-content");
+    if (!content) return;
+    const focusable = content.querySelectorAll(FOCUSABLE);
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    if (e.key === "Tab") {
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  }
 
   document.addEventListener("click", (e) => {
-    if (e.target.matches(".modal.is-open")) {
+    const trigger = e.target.closest("[data-modal-trigger]");
+    if (trigger) {
+      openModal(trigger.dataset.modalTrigger);
+      return;
+    }
+    const closeBtn = e.target.closest("[data-modal-close]");
+    if (closeBtn) {
+      closeModal(closeBtn.dataset.modalClose);
+      return;
+    }
+    if (e.target.classList.contains("modal") && e.target.classList.contains("is-open")) {
       closeModal(e.target.id);
     }
   });
@@ -34,6 +63,10 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".modal.is-open").forEach((m) =>
         closeModal(m.id)
       );
+    }
+    const openModal = document.querySelector(".modal.is-open");
+    if (openModal && e.key === "Tab") {
+      trapFocus(openModal, e);
     }
   });
 
@@ -89,6 +122,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!noResults) {
         noResults = document.createElement("div");
         noResults.className = "no-results";
+        noResults.setAttribute("role", "status");
+        noResults.setAttribute("aria-live", "polite");
         noResults.textContent = "No projects match your search.";
         projectGrid.appendChild(noResults);
       }
@@ -103,8 +138,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      filterBtns.forEach((b) => b.classList.remove("active"));
+      filterBtns.forEach((b) => {
+        b.classList.remove("active");
+        b.setAttribute("aria-pressed", "false");
+      });
       btn.classList.add("active");
+      btn.setAttribute("aria-pressed", "true");
       activeFilter = btn.dataset.filter;
       applyFilters();
     });
@@ -151,6 +190,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", () => {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (docHeight <= 0) {
+        scrollProgress.style.width = "0%";
+        return;
+      }
       const scrollPercent = (scrollTop / docHeight) * 100;
       scrollProgress.style.width = scrollPercent + "%";
     }, { passive: true });

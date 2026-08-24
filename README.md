@@ -15,7 +15,7 @@ technical skills, and selected work to recruiters or hiring teams.
 
 ## Features
 
-- **6 project cards** — Sobat Pintar, Kantin, Toki Chat Bot, Auto Tester, Todo App, BootPy
+- **7 project cards** — Sobat Pintar, Kantin, Toki Chat Bot, Auto Tester, Linkas, Pixel Drift, BootPy
 - **AI-assisted badges** — all projects marked as AI-assisted development (Codex, Gemini, Claude, Opencode)
 - **Search & filter** — real-time search by name/description + category filter (AI, Full-Stack, Bot, Tooling)
 - **Case study modal** — detailed contribution breakdown for each project

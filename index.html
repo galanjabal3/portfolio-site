@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galan Jabal — Junior Backend Developer Portfolio</title>
+    <title>Galan Jabal — Backend Developer Portfolio</title>
     <meta
       name="description"
-      content="Galan Jabal's portfolio — Junior Backend Developer specializing in Python, Go, REST APIs, and full-stack web projects. All projects built with AI-assisted development."
+      content="Galan Jabal's portfolio — Backend Developer specializing in Python, Go, REST APIs, and full-stack web projects. All projects built with AI-assisted development."
     />
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
@@ -14,24 +14,28 @@
     <link rel="canonical" href="https://galanjabal.dev/" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Galan Jabal — Junior Backend Developer" />
-    <meta property="og:description" content="Portfolio featuring AI education platform, food ordering system, Telegram bot, QA automation tool, task manager, and Python CLI scaffolding tool. Built with AI-assisted development using Codex, Gemini, Claude, and Opencode." />
+    <meta property="og:title" content="Galan Jabal — Backend Developer" />
+    <meta property="og:description" content="Portfolio featuring an AI education platform, food ordering system, Telegram bot, QA automation tool, task manager, and Python CLI scaffolding tool — built with AI-assisted development using Codex, Gemini, Claude, and Opencode." />
+    <meta property="og:image" content="https://galanjabal.dev/assets/og-image.png" />
     <meta property="og:url" content="https://galanjabal.dev/" />
     <meta property="og:site_name" content="Galan Jabal Portfolio" />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Galan Jabal — Junior Backend Developer" />
-    <meta name="twitter:description" content="Portfolio featuring AI education platform, food ordering system, Telegram bot, QA automation tool, task manager, and Python CLI scaffolding tool. Built with AI-assisted development." />
+    <meta name="twitter:title" content="Galan Jabal — Backend Developer" />
+    <meta name="twitter:description" content="Portfolio featuring an AI education platform, food ordering system, Telegram bot, QA automation tool, task manager, and Python CLI scaffolding tool — built with AI-assisted development using Codex, Gemini, Claude, and Opencode." />
+    <meta name="twitter:image" content="https://galanjabal.dev/assets/og-image.png" />
     <meta name="twitter:creator" content="@galanjabal3" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
     <!-- Scroll progress indicator -->
-    <div class="scroll-progress" id="scroll-progress"></div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
     <header class="site-header" id="top">
       <nav class="nav" aria-label="Main navigation">
@@ -48,19 +52,20 @@
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
           <a href="resume.html">Resume</a>
-          <a href="https://github.com/galanjabal3" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/galan-jabal-nur-8a1ba5234/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/galanjabal3" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/galan-jabal-nur-8a1ba5234/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </nav>
 
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Junior Backend Developer Portfolio</p>
+          <p class="eyebrow">Backend Developer Portfolio</p>
           <h1 id="hero-title">Galan Jabal</h1>
           <p class="hero-text">
-            Junior Backend Developer with experience building APIs and backend
-            systems using Python, Go, and full-stack projects that strengthen
-            product thinking.
+            Backend Developer with experience building APIs and backend
+            systems using Python and Go. With the help of AI coding tools,
+            I've also extended into frontend work, taking projects fullstack
+            end-to-end.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="#portfolio">View portfolio</a>
@@ -77,7 +82,7 @@
           </div>
         </div>
         <div class="hero-panel" aria-label="Portfolio capability summary">
-          <div class="panel-head">
+          <div class="panel-head" aria-hidden="true">
             <span></span>
             <span></span>
             <span></span>
@@ -85,7 +90,7 @@
           <div class="profile-card">
             <div class="avatar">GJ</div>
             <div>
-              <strong>Junior Backend Developer</strong>
+              <strong>Backend Developer</strong>
               <span>Demak, Central Java, Indonesia</span>
             </div>
           </div>
@@ -98,7 +103,7 @@
           </div>
           <div class="metric-row">
             <div>
-              <strong>6</strong>
+              <strong>7</strong>
               <span>Projects</span>
             </div>
             <div>
@@ -114,7 +119,7 @@
       </section>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="section intro reveal" aria-labelledby="intro-title">
         <div>
           <p class="eyebrow">For recruiters and hiring teams</p>
@@ -134,13 +139,13 @@
         </div>
         <div class="about-copy">
           <p>
-            As a Junior Backend Developer, I specialize in building robust APIs, optimizing database queries, and designing scalable system architectures. I bridge the gap between complex backend logic and seamless user experiences, ensuring my code is not just functional but also maintainable and performant.
+            As a Backend Developer, I specialize in building robust APIs, optimizing database queries, and designing scalable system architectures. With the help of AI coding tools, I've also expanded into frontend work, allowing me to take projects fullstack from end to end.
           </p>
           <p>
-            With solid hands-on experience in <strong>Python</strong> (FastAPI, Falcon) and <strong>Go</strong> (Gin), coupled with <strong>PostgreSQL</strong> database management, I thrive in environments that prioritize clean code, automated testing, and product-driven development.
+            I have hands-on experience with <strong>Python</strong> (FastAPI, Falcon) and <strong>Go</strong> (Gin), along with <strong>PostgreSQL</strong> database management, and I care about clean code, automated testing, and product-driven development.
           </p>
           <p>
-            All projects in this portfolio are built with <strong>AI-assisted development</strong> (vibe coding) using tools like <strong>AI Codex</strong>, <strong>Gemini</strong>, <strong>Claude</strong>, and <strong>Opencode</strong> — accelerating development while maintaining code quality.
+            All projects in this portfolio are built with <strong>AI-assisted development</strong> (vibe coding) using tools like <strong>Codex</strong>, <strong>Gemini</strong>, <strong>Claude</strong>, and <strong>Opencode</strong> — helping me move faster while keeping code quality in check.
           </p>
         </div>
       </section>
@@ -185,11 +190,13 @@
             <button class="filter-btn" data-filter="ai">AI</button>
             <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
             <button class="filter-btn" data-filter="bot">Bot</button>
+            <button class="filter-btn" data-filter="api">API</button>
+            <button class="filter-btn" data-filter="game">Game</button>
             <button class="filter-btn" data-filter="tooling">Tooling</button>
           </div>
         </div>
 
-        <div class="project-grid" id="project-grid">
+        <div class="project-grid" id="project-grid" aria-live="polite" aria-label="Projects">
           <article class="project-card" data-category="ai" data-name="sobat pintar">
             <div class="project-media soft-blue">
               <img src="https://res.cloudinary.com/dzzflhq79/image/upload/v1778876222/sobi_robot_qusvll.png" alt="Sobat Pintar mascot" loading="lazy" />
@@ -207,14 +214,14 @@
               </div>
               <div class="project-links">
                 <a href="https://github.com/galanjabal3/sobat-pintar" target="_blank" rel="noopener noreferrer">README</a>
-                <button class="button-link" onclick="openModal('sobi-modal')" data-modal-trigger="sobi-modal">View Details</button>
+                <button class="button-link" data-modal-trigger="sobi-modal">View Details</button>
               </div>
             </div>
           </article>
 
           <article class="project-card" data-category="fullstack" data-name="kantin">
             <div class="project-media soft-green">
-              <img src="assets/kantin_logo.svg" alt="Kantin logo" loading="lazy" />
+              <img src="assets/kantin_logo.svg" alt="Kantin logo" loading="lazy" width="120" height="80" />
             </div>
             <div class="project-content">
               <div class="project-topline">
@@ -230,14 +237,14 @@
               <div class="project-links">
                 <a href="https://github.com/galanjabal3/kantin" target="_blank" rel="noopener noreferrer">README</a>
                 <a href="https://kantin.vercel.app/dashboard" target="_blank" rel="noopener noreferrer">Demo</a>
-                <button class="button-link" onclick="openModal('kantin-modal')" data-modal-trigger="kantin-modal">View Details</button>
+                <button class="button-link" data-modal-trigger="kantin-modal">View Details</button>
               </div>
             </div>
           </article>
 
           <article class="project-card" data-category="bot" data-name="toki chat bot">
             <div class="project-media soft-orange">
-              <img src="assets/toki-avatar.png" alt="Toki Chat avatar" loading="lazy" />
+              <img src="assets/toki-avatar.png" alt="Toki Chat avatar" loading="lazy" width="120" height="120" />
             </div>
             <div class="project-content">
               <div class="project-topline">
@@ -252,7 +259,7 @@
               </div>
               <div class="project-links">
                 <a href="https://github.com/galanjabal3/toki-chat-bot" target="_blank" rel="noopener noreferrer">README</a>
-                <button class="button-link" onclick="openModal('toki-modal')" data-modal-trigger="toki-modal">View Details</button>
+                <button class="button-link" data-modal-trigger="toki-modal">View Details</button>
               </div>
             </div>
           </article>
@@ -274,30 +281,7 @@
               </div>
               <div class="project-links">
                 <a href="https://github.com/galanjabal3/auto-tester" target="_blank" rel="noopener noreferrer">README</a>
-                <button class="button-link" onclick="openModal('auto-modal')" data-modal-trigger="auto-modal">View Details</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="fullstack" data-name="todo app">
-            <div class="project-media soft-red">
-              <img src="assets/todo_logo.png" alt="Todo App logo" loading="lazy" />
-            </div>
-            <div class="project-content">
-              <div class="project-topline">
-                <span class="badge">Task Manager</span>
-                <span class="badge ai-badge">AI-assisted</span>
-                <span class="status">Full-stack</span>
-              </div>
-              <h3>Todo App</h3>
-              <p>Task manager with JWT auth, group collaboration, file attachments, and status workflow.</p>
-              <div class="tags">
-                <span>React</span><span>Python</span><span>Falcon</span><span>Pony ORM</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/galanjabal3/todo-app-frontend" target="_blank" rel="noopener noreferrer">Frontend</a>
-                <a href="https://github.com/galanjabal3/todo-app-backend" target="_blank" rel="noopener noreferrer">Backend</a>
-                <button class="button-link" onclick="openModal('todo-modal')" data-modal-trigger="todo-modal">View Details</button>
+                <button class="button-link" data-modal-trigger="auto-modal">View Details</button>
               </div>
             </div>
           </article>
@@ -320,13 +304,55 @@
               <div class="project-links">
                 <a href="https://pypi.org/project/bootpy-cli/" target="_blank" rel="noopener noreferrer">PyPI</a>
                 <a href="https://github.com/galanjabal3/bootpy" target="_blank" rel="noopener noreferrer">README</a>
-                <button class="button-link" onclick="openModal('bootpy-modal')" data-modal-trigger="bootpy-modal">View Details</button>
+                <button class="button-link" data-modal-trigger="bootpy-modal">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="api" data-name="linkas">
+            <div class="project-media soft-indigo">
+              <span class="text-mark">Lk</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <span class="badge">URL Shortener</span>
+                <span class="badge ai-badge">AI-assisted</span>
+                <span class="status">Done</span>
+              </div>
+              <h3>Linkas</h3>
+              <p>Fast URL shortener API with custom slugs, QR code generation, click analytics, rate limiting, and URL expiration.</p>
+              <div class="tags">
+                <span>Go</span><span>Gin</span><span>PostgreSQL</span><span>Swagger</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/galanjabal3/linkas" target="_blank" rel="noopener noreferrer">README</a>
+                <button class="button-link" data-modal-trigger="linkas-modal">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="game" data-name="pixel drift">
+            <div class="project-media soft-cyan">
+              <img src="assets/pixel-drift-logo.svg" alt="Pixel Drift game logo" loading="lazy" width="120" height="80" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <span class="badge">Game Engine</span>
+                <span class="badge ai-badge">AI-assisted</span>
+                <span class="status">Library</span>
+              </div>
+              <h3>Pixel Drift</h3>
+              <p>Reusable offline runner / glider engine with theming support, Service Worker offline kit, and npm distribution.</p>
+              <div class="tags">
+                <span>JavaScript</span><span>Canvas</span><span>Vite</span><span>SW</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/galanjabal3/pixel-drift" target="_blank" rel="noopener noreferrer">README</a>
+                <button class="button-link" data-modal-trigger="pixeldrift-modal">View Details</button>
               </div>
             </div>
           </article>
         </div>
-
-      </section>
 
       <section class="section skills reveal" id="skills" aria-labelledby="skills-title">
         <div>
@@ -366,13 +392,13 @@
           </p>
           <div class="contact-links">
             <a href="mailto:galanjabal3@gmail.com">Email Me</a>
-            <a href="https://github.com/galanjabal3" target="_blank" rel="noreferrer">
+            <a href="https://github.com/galanjabal3" target="_blank" rel="noopener noreferrer">
               Open GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/galan-jabal-nur-8a1ba5234/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Open LinkedIn
             </a>
@@ -384,20 +410,20 @@
     <footer class="footer">
       <p>&copy; 2025&ndash;2026 Galan Jabal</p>
       <div class="footer-links">
-        <a href="https://github.com/galanjabal3" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/galan-jabal-nur-8a1ba5234/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/galanjabal3" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/galan-jabal-nur-8a1ba5234/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </footer>
 
     <!-- Back to top floating button -->
     <a href="#top" class="back-to-top" id="back-to-top" aria-label="Back to top">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
     </a>
 
     <!-- Modal: Sobat Pintar -->
     <div id="sobi-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="sobi-modal-title" aria-hidden="true">
       <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('sobi-modal')" aria-label="Close">&times;</button>
+        <button class="modal-close" data-modal-close="sobi-modal" aria-label="Close">&times;</button>
         <p class="modal-eyebrow">Case Study</p>
         <h3 id="sobi-modal-title">Sobat Pintar</h3>
         <p class="modal-meta">AI Education Platform &middot; Next.js + Go Gin + Gemini &middot; 2026</p>
@@ -420,7 +446,7 @@
     <!-- Modal: Kantin -->
     <div id="kantin-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="kantin-modal-title" aria-hidden="true">
       <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('kantin-modal')" aria-label="Close">&times;</button>
+        <button class="modal-close" data-modal-close="kantin-modal" aria-label="Close">&times;</button>
         <p class="modal-eyebrow">Case Study</p>
         <h3 id="kantin-modal-title">Kantin</h3>
         <p class="modal-meta">Food Ordering Platform &middot; React + FastAPI + PostgreSQL &middot; 2026</p>
@@ -443,7 +469,7 @@
     <!-- Modal: Toki Chat Bot -->
     <div id="toki-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="toki-modal-title" aria-hidden="true">
       <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('toki-modal')" aria-label="Close">&times;</button>
+        <button class="modal-close" data-modal-close="toki-modal" aria-label="Close">&times;</button>
         <p class="modal-eyebrow">Case Study</p>
         <h3 id="toki-modal-title">Toki Chat Bot</h3>
         <p class="modal-meta">Telegram Bot &middot; TypeScript + Grammy + Drizzle + PostgreSQL &middot; 2026</p>
@@ -466,7 +492,7 @@
     <!-- Modal: Auto Tester -->
     <div id="auto-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="auto-modal-title" aria-hidden="true">
       <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('auto-modal')" aria-label="Close">&times;</button>
+        <button class="modal-close" data-modal-close="auto-modal" aria-label="Close">&times;</button>
         <p class="modal-eyebrow">Case Study</p>
         <h3 id="auto-modal-title">Auto Tester</h3>
         <p class="modal-meta">QA Automation &middot; TypeScript + React + Express + PostgreSQL &middot; 2026</p>
@@ -487,33 +513,61 @@
       </div>
     </div>
 
-    <!-- Modal: Todo App -->
-    <div id="todo-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="todo-modal-title" aria-hidden="true">
+    <!-- Modal: Linkas -->
+    <div id="linkas-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="linkas-modal-title" aria-hidden="true">
       <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('todo-modal')" aria-label="Close">&times;</button>
+        <button class="modal-close" data-modal-close="linkas-modal" aria-label="Close">&times;</button>
         <p class="modal-eyebrow">Case Study</p>
-        <h3 id="todo-modal-title">Todo App</h3>
-        <p class="modal-meta">Task Manager &middot; React + Python Falcon + Pony ORM &middot; 2026</p>
+        <h3 id="linkas-modal-title">Linkas</h3>
+        <p class="modal-meta">URL Shortener API &middot; Go + Gin + PostgreSQL &middot; 2026</p>
         <h4>Background</h4>
-        <p>Full-stack task management application with user authentication, task CRUD, and group collaboration features.</p>
+        <p>A fast, lightweight URL shortener API designed for simplicity and performance. Supports custom slugs, QR code generation, click analytics with IP/user-agent tracking, rate limiting, and URL expiration with TTL.</p>
         <h4>My Contribution</h4>
         <ul>
-          <li>Implemented a 4-layer architecture: Resources → Services → Repositories → Database.</li>
-          <li>Built a thread-safe dependency injection container with singleton pattern.</li>
-          <li>Created the group collaboration system with invite tokens, approval workflow, and role-based access.</li>
-          <li>Designed file attachment upload via Supabase Storage with 10MB limit.</li>
+          <li>Designed the REST API with Go Gin following clean architecture: handler → service → repository layers.</li>
+          <li>Implemented custom slug generation with conflict detection (409 conflict on duplicate).</li>
+          <li>Built QR code generation endpoint returning PNG images via go-qrcode library.</li>
+          <li>Added click analytics tracking IP, user-agent, and referrer with aggregated stats endpoint.</li>
+          <li>Implemented rate limiting (30 req/min per IP) and URL expiration with proper TTL error handling.</li>
+          <li>Generated interactive Swagger documentation via Swaggo.</li>
+          <li>Containerized with Docker Compose for one-command PostgreSQL + API deployment.</li>
         </ul>
         <h4>Tech Stack</h4>
-        <p class="modal-stack">React &middot; Vite &middot; TailwindCSS &middot; Python Falcon &middot; Pony ORM &middot; PostgreSQL &middot; Supabase</p>
+        <p class="modal-stack">Go 1.22 &middot; Gin &middot; PostgreSQL &middot; sqlx &middot; go-qrcode &middot; Swaggo &middot; Docker</p>
         <h4>Outcome</h4>
-        <p>Deployed full-stack app with JWT auth, task management, group collaboration, file attachments, and dark mode.</p>
+        <p>Production-ready URL shortener API with custom slugs, QR codes, analytics dashboard, rate limiting, expiration, and full Swagger docs.</p>
+      </div>
+    </div>
+
+    <!-- Modal: Pixel Drift -->
+    <div id="pixeldrift-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="pixeldrift-modal-title" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" data-modal-close="pixeldrift-modal" aria-label="Close">&times;</button>
+        <p class="modal-eyebrow">Case Study</p>
+        <h3 id="pixeldrift-modal-title">Pixel Drift</h3>
+        <p class="modal-meta">Game Engine &middot; Vanilla JS + Canvas + Vite &middot; 2026</p>
+        <h4>Background</h4>
+        <p>Reusable offline runner / glider engine built as a fallback game for offline pages across multiple projects. Driftlet glides through crystal corridors — hold to rise, release to fall. Designed as a framework-agnostic npm package.</p>
+        <h4>My Contribution</h4>
+        <ul>
+          <li>Architected modular engine: GameLoop, InputHandler, Physics, Sound as separate systems.</li>
+          <li>Built level progression system with increasing difficulty and obstacle variety (floor crystals, sky crystals, gates).</li>
+          <li>Implemented theming system with preset themes (dark, light, sobat-pintar, kantin) and per-project customization.</li>
+          <li>Created offline kit with Service Worker precaching and offline.html fallback page.</li>
+          <li>Packaged as npm library (ES + UMD) via Vite lib mode for easy import in other projects.</li>
+          <li>Built interactive demo with theme switcher, HUD, and start/pause/game-over overlays.</li>
+        </ul>
+        <h4>Tech Stack</h4>
+        <p class="modal-stack">Vanilla JavaScript &middot; Canvas API &middot; Vite &middot; Service Worker &middot; WebAudio &middot; npm</p>
+        <h4>Outcome</h4>
+        <p>Published npm library with themed game engine, offline kit, and demo — importable in any project as a fallback offline experience.</p>
       </div>
     </div>
 
     <!-- Modal: BootPy -->
     <div id="bootpy-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="bootpy-modal-title" aria-hidden="true">
       <div class="modal-content">
-        <button class="modal-close" onclick="closeModal('bootpy-modal')" aria-label="Close">&times;</button>
+        <button class="modal-close" data-modal-close="bootpy-modal" aria-label="Close">&times;</button>
         <p class="modal-eyebrow">Case Study</p>
         <h3 id="bootpy-modal-title">BootPy</h3>
         <p class="modal-meta">CLI Tool &middot; Python + Typer + Jinja2 + Rich &middot; 2026</p>
