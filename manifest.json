@@ -1,0 +1,16 @@
+{
+  "name": "Galan Jabal — Backend Developer Portfolio",
+  "short_name": "GJ Portfolio",
+  "description": "Backend Developer portfolio featuring Python, Go, REST APIs, and full-stack web projects.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0e7490",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
