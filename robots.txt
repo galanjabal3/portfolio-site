@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://galanjabal.dev/sitemap.xml
+Sitemap: https://galanjabal3.github.io/portfolio-site/sitemap.xml
