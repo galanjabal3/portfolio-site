@@ -17,14 +17,14 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Galan Jabal — Backend Developer" />
-    <meta property="og:description" content="Portfolio featuring an AI education platform, food ordering system, Telegram bot, QA automation tool, task manager, and Python CLI scaffolding tool — built with AI-assisted development using Codex, Gemini, Claude, and Opencode." />
+    <meta property="og:description" content="Portfolio featuring a visual workflow automation engine, an AI education platform, food ordering system, Telegram bot, QA automation tool, task manager, and Python CLI scaffolding tool — built with AI-assisted development using Codex, Gemini, Claude, and Opencode." />
     <meta property="og:image" content="https://galanjabal.dev/assets/og-image.png" />
     <meta property="og:url" content="https://galanjabal.dev/" />
     <meta property="og:site_name" content="Galan Jabal Portfolio" />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Galan Jabal — Backend Developer" />
-    <meta name="twitter:description" content="Portfolio featuring an AI education platform, food ordering system, Telegram bot, QA automation tool, task manager, and Python CLI scaffolding tool — built with AI-assisted development using Codex, Gemini, Claude, and Opencode." />
+    <meta name="twitter:description" content="Portfolio featuring a visual workflow automation engine, an AI education platform, food ordering system, Telegram bot, QA automation tool, task manager, and Python CLI scaffolding tool — built with AI-assisted development using Codex, Gemini, Claude, and Opencode." />
     <meta name="twitter:image" content="https://galanjabal.dev/assets/og-image.png" />
     <meta name="twitter:creator" content="@galanjabal3" />
     <!-- Google Fonts -->
@@ -105,8 +105,8 @@
           </div>
           <div class="metric-row">
             <div>
-              <strong>7</strong>
-              <span>Projects</span>
+               <strong>8</strong>
+               <span>Projects</span>
             </div>
             <div>
               <strong>4+</strong>
@@ -333,28 +333,50 @@
             </div>
           </article>
 
-          <article class="project-card" data-category="game" data-name="pixel drift">
-            <div class="project-media soft-cyan">
-              <img src="assets/pixel-drift-logo.svg" alt="Pixel Drift game logo" loading="lazy" width="120" height="80" />
-            </div>
-            <div class="project-content">
-              <div class="project-topline">
-                <span class="badge">Game Engine</span>
-                <span class="badge ai-badge">AI-assisted</span>
-                <span class="status">Library</span>
-              </div>
-              <h3>Pixel Drift</h3>
-              <p>Reusable offline runner / glider engine with theming support, Service Worker offline kit, and npm distribution.</p>
-              <div class="tags">
-                <span>JavaScript</span><span>Canvas</span><span>Vite</span><span>SW</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/galanjabal3/pixel-drift" target="_blank" rel="noopener noreferrer">README</a>
-                <button class="button-link" data-modal-trigger="pixeldrift-modal">View Details</button>
-              </div>
-            </div>
-          </article>
-        </div>
+           <article class="project-card" data-category="game" data-name="pixel drift">
+             <div class="project-media soft-cyan">
+               <img src="assets/pixel-drift-logo.svg" alt="Pixel Drift game logo" loading="lazy" width="120" height="80" />
+             </div>
+             <div class="project-content">
+               <div class="project-topline">
+                 <span class="badge">Game Engine</span>
+                 <span class="badge ai-badge">AI-assisted</span>
+                 <span class="status">Library</span>
+               </div>
+               <h3>Pixel Drift</h3>
+               <p>Reusable offline runner / glider engine with theming support, Service Worker offline kit, and npm distribution.</p>
+               <div class="tags">
+                 <span>JavaScript</span><span>Canvas</span><span>Vite</span><span>SW</span>
+               </div>
+               <div class="project-links">
+                 <a href="https://github.com/galanjabal3/pixel-drift" target="_blank" rel="noopener noreferrer">README</a>
+                 <button class="button-link" data-modal-trigger="pixeldrift-modal">View Details</button>
+               </div>
+             </div>
+           </article>
+
+           <article class="project-card" data-category="tooling" data-name="flowalchemy">
+             <div class="project-media soft-amber">
+               <img src="assets/flow-alchemy.png" alt="FlowAlchemy dashboard with workflow" loading="lazy" width="120" height="80" />
+             </div>
+             <div class="project-content">
+               <div class="project-topline">
+                 <span class="badge">Workflow Engine</span>
+                 <span class="badge ai-badge">AI-assisted</span>
+                 <span class="status">Featured</span>
+               </div>
+               <h3>FlowAlchemy</h3>
+               <p>Visual workflow automation engine — drag-and-drop builder that compiles workflow graphs to executable Python. Zapier-style automation with a developer-grade edge.</p>
+               <div class="tags">
+                 <span>React</span><span>TypeScript</span><span>Tailwind</span><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span>
+               </div>
+               <div class="project-links">
+                 <a href="https://github.com/galanjabal3/flow-alchemy" target="_blank" rel="noopener noreferrer">README</a>
+                 <button class="button-link" data-modal-trigger="flowalchemy-modal">View Details</button>
+               </div>
+             </div>
+           </article>
+         </div>
 
       <section class="section skills reveal" id="skills" aria-labelledby="skills-title">
         <div>
@@ -566,30 +588,54 @@
       </div>
     </div>
 
-    <!-- Modal: BootPy -->
-    <div id="bootpy-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="bootpy-modal-title" aria-hidden="true">
-      <div class="modal-content">
-        <button class="modal-close" data-modal-close="bootpy-modal" aria-label="Close">&times;</button>
-        <p class="modal-eyebrow">Case Study</p>
-        <h3 id="bootpy-modal-title">BootPy</h3>
-        <p class="modal-meta">CLI Tool &middot; Python + Typer + Jinja2 + Rich &middot; 2026</p>
-        <h4>Background</h4>
-        <p>Interactive CLI scaffolding tool that generates production-ready Python backend projects. Think "create-react-app" but for FastAPI, Django, Flask, and Litestar.</p>
-        <h4>My Contribution</h4>
-        <ul>
-          <li>Designed a manifest-driven template engine with conditional file/directory generation.</li>
-          <li>Built atomic generation using staging directories to prevent partial scaffolds on failure.</li>
-          <li>Created 75+ templates across 4 frameworks: FastAPI (19), Django (21), Flask (18), Litestar (17).</li>
-          <li>Added custom template support via --template flag for user-defined project structures.</li>
-          <li>Published on PyPI with CI/CD testing across Python 3.9–3.12.</li>
-        </ul>
-        <h4>Tech Stack</h4>
-        <p class="modal-stack">Python &middot; Typer &middot; Jinja2 &middot; Rich &middot; PyPI &middot; GitHub Actions</p>
-        <h4>Outcome</h4>
-        <p>Published CLI tool that generates full project scaffolds for 4 frameworks with database, Docker, testing, auth, and custom template options in seconds.</p>
-      </div>
-    </div>
+     <!-- Modal: BootPy -->
+     <div id="bootpy-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="bootpy-modal-title" aria-hidden="true">
+       <div class="modal-content">
+         <button class="modal-close" data-modal-close="bootpy-modal" aria-label="Close">&times;</button>
+         <p class="modal-eyebrow">Case Study</p>
+         <h3 id="bootpy-modal-title">BootPy</h3>
+         <p class="modal-meta">CLI Tool &middot; Python + Typer + Jinja2 + Rich &middot; 2026</p>
+         <h4>Background</h4>
+         <p>Interactive CLI scaffolding tool that generates production-ready Python backend projects. Think "create-react-app" but for FastAPI, Django, Flask, and Litestar.</p>
+         <h4>My Contribution</h4>
+         <ul>
+           <li>Designed a manifest-driven template engine with conditional file/directory generation.</li>
+           <li>Built atomic generation using staging directories to prevent partial scaffolds on failure.</li>
+           <li>Created 75+ templates across 4 frameworks: FastAPI (19), Django (21), Flask (18), Litestar (17).</li>
+           <li>Added custom template support via --template flag for user-defined project structures.</li>
+           <li>Published on PyPI with CI/CD testing across Python 3.9–3.12.</li>
+         </ul>
+         <h4>Tech Stack</h4>
+         <p class="modal-stack">Python &middot; Typer &middot; Jinja2 &middot; Rich &middot; PyPI &middot; GitHub Actions</p>
+         <h4>Outcome</h4>
+         <p>Published CLI tool that generates full project scaffolds for 4 frameworks with database, Docker, testing, auth, and custom template options in seconds.</p>
+       </div>
+     </div>
 
-    <script src="script.js"></script>
+     <!-- Modal: FlowAlchemy -->
+     <div id="flowalchemy-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="flowalchemy-modal-title" aria-hidden="true">
+       <div class="modal-content">
+         <button class="modal-close" data-modal-close="flowalchemy-modal" aria-label="Close">&times;</button>
+         <p class="modal-eyebrow">Case Study</p>
+         <h3 id="flowalchemy-modal-title">FlowAlchemy</h3>
+         <p class="modal-meta">Workflow Engine &middot; React 19 + TypeScript + TailwindCSS + FastAPI &middot; 2026</p>
+         <h4>Background</h4>
+         <p>Visual workflow automation engine with a drag-and-drop builder that compiles workflow graphs into executable Python. Designed for developers who want Zapier-style automation with a developer-grade edge — full control over logic, credentials, and scheduling.</p>
+         <h4>My Contribution</h4>
+         <ul>
+           <li>Built the visual node-based editor with drag-and-drop workflow construction, real-time preview, and a visual debugger with breakpoints.</li>
+           <li>Implemented versioning and replay system for workflow executions, enabling full audit trails and debugging of past runs.</li>
+           <li>Designed AES-encrypted credential storage and signed webhook verification for secure automation pipelines.</li>
+           <li>Architected the scheduling engine and signed webhook infrastructure with Redis-backed job queues and PostgreSQL persistence.</li>
+           <li>Containerized the full stack with Docker for seamless deployment and local development.</li>
+         </ul>
+         <h4>Tech Stack</h4>
+         <p class="modal-stack">React 19 &middot; TypeScript &middot; TailwindCSS &middot; FastAPI &middot; PostgreSQL &middot; Redis &middot; Docker</p>
+         <h4>Outcome</h4>
+         <p>Featured workflow automation platform with visual builder, debugger, versioning, encrypted credentials, and scheduled execution — all compiled to Python.</p>
+       </div>
+     </div>
+
+     <script src="script.js"></script>
   </body>
 </html>

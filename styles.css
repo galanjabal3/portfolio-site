@@ -1101,6 +1101,18 @@ body.no-scroll {
   border-color: rgba(14, 116, 144, 0.2);
 }
 
+/* ─── FlowAlchemy Amber Media ─── */
+.soft-amber {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0)),
+    #fef3c7;
+}
+
+.soft-amber .text-mark {
+  color: #b45309;
+  border-color: rgba(180, 83, 9, 0.2);
+}
+
 /* ─── Linkas Indigo Media ─── */
 .soft-indigo {
   background:
